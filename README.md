@@ -41,3 +41,36 @@ EposCmd64.dll (for 64-bit Python) ← Most common
 EposCmd.dll (for 32-bit Python)
 
 Copy the full path and add it to possible_paths list
+
+
+
+
+Basic Connection Test
+bashpython test_connection.py
+Tests basic connectivity and enables motor for 5 seconds at 10 RPM.
+Minimum Velocity Characterization
+bashpython test_min_velocity.py
+Systematically tests velocities from 1-50 RPM and logs data to CSV.
+Output:
+
+Console: Real-time status updates
+CSV file: velocity_test_YYYYMMDD_HHMMSS.csv
+
+Demo Sequence
+bashpython demo_sequence.py
+Runs a professional demonstration sequence:
+
+Ultra-low speed (1 RPM)
+Acceleration profile testing
+Bidirectional control
+Emergency stop
+
+Interactive Control
+bashpython interactive_control.py
+Manual command-line control:
+EPOS> enable
+EPOS> vel 100          # Set 100 RPM
+EPOS> accel 5000       # Set acceleration
+EPOS> stop
+EPOS> status
+EPOS> quit
