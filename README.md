@@ -69,9 +69,17 @@ Interactive Control
 bashpython interactive_control.py
 
 Manual command-line control:
-EPOS> enable
-EPOS> vel 100          # Set 100 RPM
-EPOS> accel 5000       # Set acceleration
-EPOS> stop
-EPOS> status
-EPOS> quit
+- EPOS> enable
+- EPOS> vel 100
+- EPOS> accel 5000
+- EPOS> stop
+- EPOS> status
+- EPOS> quit
+
+
+
+
+
+
+
+
